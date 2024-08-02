@@ -19,7 +19,7 @@ collection = database[COLLECTION_NAME]
 
 app = FastAPI()
 
-origins = ["http://localhost:4200"]
+origins = ["http://localhost:4200", "https://shykiu77.github.io"]
 
 app.add_middleware(
     CORSMiddleware,
