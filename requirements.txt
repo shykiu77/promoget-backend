@@ -1,0 +1,7 @@
+pillow
+google-generativeai
+fastapi
+uvicorn
+motor
+python-dotenv
+requests
