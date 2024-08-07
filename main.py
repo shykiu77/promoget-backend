@@ -68,7 +68,7 @@ async def get_products(
     if daysAgo is not None:
         now = datetime.utcnow()
         dateMin = now - timedelta(days=daysAgo)
-        filter_criteria["created_at"] = {"$gte": dateMin}
+        filter_criteria["created_at"] = {"$gte": dateMin.timestamp()}
 
     valid_sort_fields = ["true_price", "created_at", "label"]
     if sort_by not in valid_sort_fields:
