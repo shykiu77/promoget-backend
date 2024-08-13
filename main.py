@@ -45,7 +45,7 @@ async def get_products(
     query: Optional[str] = None,
     order: str = "asc",
     page: int = 1,
-    limit: int = 30,  # Updated page size
+    limit: int = 15, 
     priceMin: Optional[float] = None,
     priceMax: Optional[float] = None,
     daysAgo: Optional[int] = None,
